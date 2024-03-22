@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7488918404.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Registration Form || one</title>
+</head>
+<body class="h-screen flex items-center justify-center bg-[#4070f4]">
+    <div class="w-[380px] h-[500px] relative overflow-hidden">
+        <div class="w-full bg-white p-5 left-0 rounded-md absolute duration-75 top-0" id="Signup-form">
+            <div>
+                <header class="text-4xl text-black text-center font-bold select-none">Join us today!</header>
+                <p class="text-[18px] text-center font-medium text-zinc-500 mt-1 select-none">Sign up now to become a memeber</p>
+            </div>
+            <form action="#" class="flex flex-col gap-4 mt-6">
+              
+                <input type="text" placeholder="Enter Name" class="input-box" required>
+                <input type="email" placeholder="Enter Email" class="input-box" required >
+                <input type="password" placeholder="Choose a Password" class="input-box" id="create_pw" required>
+               <div class="h-12 relative">
+                <input type="password" placeholder="Re-Enter Password" class="peer w-full input-box" id="confirm_pw" required>
+                <i class="fa-regular fa-eye-slash absolute right-3 top-[50%] translate-y-[-50%] invisible peer-focus:visible peer-valid:visible peer-valid:text-[#4070f4] cursor-pointer" id="eyeIcon"></i>
+              </div>
+                <button class="h-12 outline-none bg-[#4070f4] text-white text-[25px]  font-medium rounded-md">Signup</button>
+            </form>
+            <div class="mt-5">
+                <p class="text-center font-medium">Already a member? <a href="#" class="text-[#4070f4] hover:underline" id="login">Login Here</a></p>
+            </div>
+        </div>
+
+        <div class="w-full bg-white p-5 rounded-md absolute top-[50%] translate-y-[-50%] left-[100%] duration-75" id="login-form">
+            <div>
+                <header class="text-4xl text-black text-center font-bold select-none">Welcome Back</header>
+                <p class="text-[18px] text-center font-medium text-zinc-500 mt-1 select-none">Sign up now to become a memeber</p>
+            </div>
+            <form action="#" class="flex flex-col gap-4 mt-6">
+                <input type="email" placeholder="Enter Email" class="input-box" required>
+                
+                    <input type="password" placeholder="Re-Enter Password" class="peer w-full input-box" id="confirm_pw" required>
+                    <button class="h-12 outline-none bg-[#4070f4] text-white text-[25px]  font-medium rounded-md">Login</button>
+            </form>
+            <div class="mt-5">
+                <p class="text-center font-medium">Not a member? <a href="#" class="text-[#4070f4] hover:underline" id="signup">Signup Here</a></p>
+            </div>
+        </div>
+    </div>
+
+<script src="./javaScript/script.js"></script>
+</body>
+</html>

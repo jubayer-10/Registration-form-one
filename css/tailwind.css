@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-box {
+    @apply border border-zinc-300 text-[17px] h-12 p-3 outline-none rounded-md focus:shadow-md valid:shadow-md ;
+}
